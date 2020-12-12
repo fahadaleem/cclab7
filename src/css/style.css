@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    font-family: 'josefin sans', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    background-color: #2E2C2F;
+    color:white;
+}
+
+
+header
+{
+    text-align: center;
+}
+
+header h1
+{
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+header hr
+{
+    margin: 0 auto;
+    width: 20%;
+    padding: 2px;
+    background-color: white;
+}
+
+#button
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin:10px auto;
+}
+
+#choose-file
+{
+    margin:15px 68px;
+    font-size: 1.5rem;
+    display: none;
+}
+
+#custom-choose-file
+{
+    display: inline-block;
+    padding: 15px 70px;
+    cursor: pointer;
+    background-color: tomato;
+    font-size: 1.2rem;
+    border-radius: 50px;
+}
+
+#generate, #get-language
+{
+    padding:5px 40px;
+    font-size: 20px;
+    background-color: tomato;
+    border:none;
+    border-radius: 50px;
+    color:white;
+    outline: none;
+    transition: 2s margin;
+    cursor: pointer;
+}
+
+#get-language
+{
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+#code
+{
+    text-align: center;
+}
+#code-output, #tokens-output
+{
+    width: 50%;
+    max-width: 45%;
+    height: 450px;
+    max-height: 450px;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color:white;
+}
+
+
+
+@media screen and (max-width:768px)
+{
+#button
+
+{
+    display: block;
+}
+    #custom-choose-file
+    {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #generate
+    {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+    }
+    #generate, #get-language
+    {
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
+#code-output, #tokens-output
+    {
+        display: block;
+        width: 90%;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compiler Construction</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <!---------Fonts--->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Fab Language Tokenization</h1>
+        <p>Muhammad Fahad Aleem, Muhammad Asaad, Syed Ahmed Basharat</p>
+    </header>
+
+    <section>
+
+        <div id="button">
+            <label id="custom-choose-file">
+                Choose Code File
+                <input type="file" id="choose-file">
+            </label>
+            <input type="button" id="generate" value="generate tokens">
+            <a href="/language.pdf" id="get-language" target="_blank">View Language</a>
+        </div>
+
+        <div id="code">
+            <textarea id="code-output" placeholder="write your code here"></textarea>
+            <textarea id="tokens-output" placeholder="Tokens generated here" readonly></textarea>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <script src="./src/chooseFile.js"></script>
+    <script src="./src/Functions.js"></script>
+    <script src="./src/index.js"></script>
+    <script src="./src/Separator.js"></script>
+
+</body>
+
+</html>
