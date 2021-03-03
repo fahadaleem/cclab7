@@ -1,12 +1,12 @@
 // select the token button
 const generateButton = document.querySelector("#generate");
+let tokens = []; // data structure arrays where all the tokens objects will be stored
 
 // the function that generates the tokens
 const generateTokens = () => {
 
 
-    const tokens = []; // data structure arrays where all the tokens objects will be stored
-
+    tokens=[];
 
     // get the content of the file from the code textarea input
     // line = "const pi=9.123; \n number (i) num=2123;"
@@ -70,6 +70,7 @@ const generateTokens = () => {
                     }
 
                     tokens.push(token);
+                    continue;
                 }
 
                 // check for the arthematic operator
@@ -195,6 +196,14 @@ const generateTokens = () => {
         }
     }
 
+
+    console.log("this is tokens:",tokens);
+
+    tokens.push({
+        classPart:"$",
+        valuePart:"",
+        lineNo:""
+    })
     // print the output of tokens array which is the arrays of objects, convert it to string and then display in textarea
     document.querySelector("#tokens-output").value = JSON.stringify(tokens, null, 4);
 

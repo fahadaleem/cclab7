@@ -19,13 +19,15 @@ const separator = (line) => {
     const regString = new RegExp(/"[\sa-zA-Z0-9]*[-]*"/g);
 
     // Regex for double / floating values
-    const doubleRegex = new RegExp(/([0-9]+\.?[0-9]+e?(-|\+)?[0-9]+)/g);
+    // const doubleRegex = new RegExp(/([0-9]*\.[0-9]+e?(-|\+)?[0-9]+)/g);
+    const doubleRegex = new RegExp(/(^[0-9]*\.?[0-9]+e?)/g);
+
 
     // Regex for compound operator
     const regForCompoundOperator = new RegExp(/[%\*\/+-]=/g);
 
     // Regex for number datatype
-    const regForNumberDT = new RegExp(/number\s*\([fid]\)/);
+    const regForNumberDT = new RegExp(/number\s*\([f|i|d]\)/);
 
 
     // Get the arrays of match string from the regex
